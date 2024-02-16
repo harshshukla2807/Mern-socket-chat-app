@@ -44,7 +44,7 @@ function Homepage() {
             <Tab>Login</Tab>
             <Tab>Sign Up</Tab>
           </TabList>
-          <TabPanels>
+          <TabPanels>  
             <TabPanel>
               <Login />
             </TabPanel>

@@ -12,11 +12,10 @@ dotenv.config();
 connectDB();
 
 const app=express();
-
 app.use(express.json()) //to accept json data from frontend
 
 app.get("/",(req,res)=>{
-    res.send("homepage")
+  res.send("homepage")
 })
 
 app.use('/api/user',userRoutes)

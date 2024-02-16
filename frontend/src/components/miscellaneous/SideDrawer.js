@@ -31,6 +31,8 @@ import { Effect } from "react-notification-badge";
 import { getSender } from "../../config/ChatLogics";
 import UserListItem from "../UserAvatar/UserListItem";
 import { ChatState } from "../../Context/ChatProvider";
+import { FaSearch } from "react-icons/fa";
+
 
 function SideDrawer() {
   const [search, setSearch] = useState("");
@@ -137,7 +139,7 @@ function SideDrawer() {
           <Button variant="ghost"
            onClick={onOpen}
              >
-            <i className="fas fa-search"></i>
+             <FaSearch />
             <Text display={{ base: "none", md: "flex" }} px={4}>
               Search User
             </Text>

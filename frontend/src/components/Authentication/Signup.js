@@ -41,8 +41,8 @@ export default function Signup() {
         const data = new FormData();
         data.append("file", pics);
         data.append("upload_preset", "chat-app");
-        data.append("cloud_name", "doc8kjl4x");
-        fetch("https://api.cloudinary.com/v1_1/doc8kjl4x/image/upload", {
+        data.append("cloud_name", "dj1thtlgs");
+        fetch("https://api.cloudinary.com/v1_1/dj1thtlgs/image/upload", {
           method: "post",
           body: data,
         })
@@ -71,6 +71,7 @@ export default function Signup() {
     
     const submitHandler = async () => {
       setPicLoading(true);
+      console.log(name,email,password,confirmpassword,)
       if (!name || !email || !password || !confirmpassword) {
         toast({
           title: "Please Fill all the Feilds",
@@ -92,7 +93,7 @@ export default function Signup() {
         });
         return;
       }
-      console.log(name, email, password, pic);
+      // console.log(name, email, password, pic);
       try {
         const config = {
           headers: {
