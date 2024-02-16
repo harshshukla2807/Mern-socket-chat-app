@@ -108,7 +108,7 @@ export default function Login() {
     width="100%"
     style={{ marginTop: 15 }}
     onClick={submitHandler}
-    // isLoading={picLoading}
+    isLoading={loading}
   >
     Login
   </Button>
